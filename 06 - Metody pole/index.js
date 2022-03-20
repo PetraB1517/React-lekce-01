@@ -30,3 +30,32 @@ zviratka.forEach( (zvire)=>{
 zviratka.forEach( (zvire, index)=>{
   console.log(index + ': ' + zvire.jmeno)
 });
+
+const filterFunkce = (zvize) => {
+  //   // if (zvize.vek > 1) {
+  //   //   return true;
+  //   // } else {
+  //   //   return false;
+  //   // }
+  // //  return zvize.vek > 1 ? true : false;
+  //  return zvize.vek > 1;
+  // }
+  // const filtrovanePole = zviratka.filter(zvize=> zvize.vek > 1 );
+  // filtrovanePole.forEach(i => console.log(i));
+  // console.log("--")
+  // zviratka.forEach(i => console.log(i));
+  // const mapovePole = zviratka.map(zvize=> `Jmeno zvizete ${zvize.jmeno}` );
+  // mapovePole.forEach(i => console.log(i));
+  //  zviratka
+  //   .filter(zvize=> zvize.vek > 1 )
+  //   .map(zvize=> `Jmeno zvizete ${zvize.jmeno}` )
+  //   .forEach(i => console.log(i));
+  //  const nalezenec = zviratka.find(zvize => zvize.vek === 1)
+  //  console.log(nalezenec);
+  zviratka
+    .sort((zvize1,zvize2 )=> zvize1.vek - zvize2.vek  )
+    .forEach(i => console.log(i));
+  // -1  zvize1 se ma zaradit pred
+  // 0  zvize1 jsou shodne
+  // 1  zvize1 se ma zaradit za
+}
