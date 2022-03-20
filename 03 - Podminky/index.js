@@ -9,6 +9,13 @@ console.log('%c JavaScript funguje! ', 'background-color: black; color: lime;');
 */
 
 
+const dospela = vek>= 18;
+
+if ( neco > neco2) {
+    console.log('ecoo');
+} else {
+    console.log('blabla');
+}
 
 
 

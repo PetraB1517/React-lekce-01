@@ -20,3 +20,13 @@ const zviratka = [
   { jmeno: '🐱 Fousek',   vek: 4, druh: 'kočka' },
   { jmeno: '🐶 Špagetka', vek: 2, druh: 'pes' }
 ];
+
+
+zviratka.forEach( (zvire)=>{
+  console.log(zvire.jmeno)
+});
+
+
+zviratka.forEach( (zvire, index)=>{
+  console.log(index + ': ' + zvire.jmeno)
+});
